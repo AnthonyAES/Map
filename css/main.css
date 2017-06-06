@@ -4,8 +4,10 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 50px;
-    background-color: #1a1a1a;
-    font-family: 'Ubuntu', sans-serif;
+    background-color: #8dcbe2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .map{
@@ -24,9 +26,9 @@ body {
 }
 
 .map_image path {
-    fill: dodgerblue;
-    stroke: #1a1a1a;
-    stroke-width: 1px;
+    fill: #71bd63;
+    stroke: white;
+    stroke-width: 3px;
     transition: fill 0.3s;
 }
 .map_image path:hover {

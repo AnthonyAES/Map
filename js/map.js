@@ -33,7 +33,14 @@ links.forEach(function (link) {
     });
 });
 
+paths.forEach(function (path) {
+    path.addEventListener('mouseleave', function() {
+        activeArea();
+    });
+});
 
-map.addEventListener('mouseover', function() {
-    activeArea();
+links.forEach(function (link) {
+    link.addEventListener('mouseleave', function() {
+        activeArea();
+    });
 });
