@@ -31,7 +31,12 @@ body {
     stroke-width: 3px;
     transition: fill 0.3s;
 }
-.map_image path:hover {
+
+#region-B path, #region-M path, #region-H path, #region-E path, #region-A path{
+    fill: #d8d8d8;
+}
+
+.map_image > svg > #fr_map > a > path:hover:not(.cls-2) {
     fill: rgba(30, 144, 255, 0.73);
 }
 
@@ -61,7 +66,7 @@ body {
     height: 50px;
     line-height: 50px;
     width: 100%;
-    background-color: #2a2a2a;
+    background-color: #81bad0;
 }
 
 .map_list > ul > li:hover {
@@ -75,4 +80,9 @@ body {
 .map_image .is-active path {
     background-color: dodgerblue;
     fill: rgba(30, 144, 255, 0.73);
+}
+
+#road path {
+    fill: transparent;
+    pointer-events: none;
 }
